@@ -1,0 +1,15 @@
+.header {
+
+  &__inner {
+
+  }
+  &__logo {
+
+  }
+  &__burger-btn{
+    display: none;
+    @media (max-width: $lg) {
+      display: block;
+    }
+  }
+}
