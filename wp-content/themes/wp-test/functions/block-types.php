@@ -2,8 +2,7 @@
 add_filter( 'allowed_block_types', 'custom_allowed_block_types', 10, 2 );
 function custom_allowed_block_types( $allowed_blocks, $post ) {
 	$allowed_blocks = array(
-		'acf/editor',
-		'acf/benefits',
+		'acf/hero',
 
 		//'core/image',
 		//'core/paragraph',

@@ -3,25 +3,15 @@
 //Icons - https://www.kevinleary.net/wordpress-list-custom-post-type-icons/
 function register_acf_blocks_types(){
 
-	//Editor
+	//Hero section
 	acf_register_block_type(array(
-		'name' => 'editor',
-		'title' => __('Editor'),
-		'render_template' => "/template-parts/builder/components/editor.php",
-		'category' => 'common',
-		'icon' => 'editor-paste-word',
-		'post_type' => array('jobs'),
-		'keywords' => array('job', 'jobs', 'offers', 'job-opening', 'opening', 'vacancies', 'vacancy'),
-	));
-	//Benefits
-	acf_register_block_type(array(
-		'name' => 'benefits',
-		'title' => __('Benefits'),
-		'render_template' => "/template-parts/builder/components/benefits.php",
+		'name' => 'Hero',
+		'title' => __('Hero'),
+		'render_template' => "/template-parts/builder/components/hero.php",
 		'category' => 'common',
 		'icon' => 'star-empty',
-		'post_type' => array('jobs'),
-		'keywords' => array('job', 'jobs', 'offers', 'job-opening', 'opening', 'vacancies', 'vacancy'),
+		'post_type' => array('courses', 'page'),
+		'keywords' => array('course', 'courses', 'hero', 'hero-section'),
 	));
 }
 if (function_exists('acf_register_block_type')) {

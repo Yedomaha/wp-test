@@ -14,3 +14,20 @@
 
 //header( 'Location: ' . get_post_type_archive_link( '' ) );
 //exit;
+get_header(); ?>
+
+<main>
+
+	<?php the_content(); ?>
+
+	<section class="courses">
+		<div class="container">
+			<div class="courses__inner">
+				
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<?php get_footer(); ?>

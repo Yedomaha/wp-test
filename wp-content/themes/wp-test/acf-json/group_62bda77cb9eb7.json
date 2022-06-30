@@ -1,12 +1,12 @@
 {
-    "key": "group_62af1d19c2aaa",
-    "title": "Builder: Editor",
+    "key": "group_62bda77cb9eb7",
+    "title": "Course settings",
     "fields": [
         {
-            "key": "field_62af1dfa01c41",
-            "label": "Editor",
-            "name": "editor",
-            "type": "wysiwyg",
+            "key": "field_62bda78911a53",
+            "label": "Term",
+            "name": "term",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,28 +16,29 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
         [
             {
-                "param": "block",
+                "param": "post_type",
                 "operator": "==",
-                "value": "acf\/editor"
+                "value": "courses"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "side",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1655643665
+    "show_in_rest": 0,
+    "modified": 1656597433
 }
