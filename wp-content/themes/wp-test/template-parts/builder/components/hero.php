@@ -8,6 +8,9 @@ $image       = get_field( 'image' );
 ?>
 
 <section class="hero">
+    <div class="hero__img-wrap">
+        <img class="hero__img" <?php echo wpTestHelperClass::get_image_attributes_by_id( $image['id'], 2000 ); ?>>
+    </div>
     <div class="container">
         <div class="hero__inner">
             <div class="hero__col">
@@ -21,7 +24,8 @@ $image       = get_field( 'image' );
 
 					<?php if ( ! empty( $text ) ): ?>
 
-                        <div class="hero__text"><?php echo $text ?></div>
+                        <div class="hero__text"><?php echo $text ?>
+                            <img src="<?php echo get_template_directory_uri() ?>/dist/img/q-right.svg" alt=""></div>
 
 					<?php endif; ?>
 
@@ -31,11 +35,6 @@ $image       = get_field( 'image' );
 
 					<?php endif; ?>
 
-                </div>
-            </div>
-            <div class="hero__col">
-                <div class="hero__img-wrap">
-                    <img class="hero__img" <?php echo wpTestHelperClass::get_image_attributes_by_id( $image['id'], 2000 ); ?>>
                 </div>
             </div>
         </div>

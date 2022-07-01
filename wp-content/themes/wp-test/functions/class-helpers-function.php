@@ -4,7 +4,7 @@ class wpTestHelperClass {
 
 	public static function get_terms_string( $terms, $separator ) {
 		if ( ! isset( $terms ) || empty( $terms ) || ! is_array( $terms ) ) {
-			return;
+			return false;
 		}
 
 		$terms        = array_values( $terms );
@@ -55,6 +55,26 @@ class wpTestHelperClass {
 		$image_url = wp_get_attachment_image_url( $image_id, 'full' );
 
 		return 'title="' . esc_attr( $image_title ) . '" alt="' . esc_attr( $image_alt ) . '" src="' . aq_resize( $image_url, $width, $height, $crop, $aq_single, $aq_upscale ) . '"';
+	}
+
+	public static function get_first_letters( $string, $max_count = 0 ) {
+		if ( ! isset( $string ) || empty( $string ) ) {
+			return false;
+		}
+		$string         = strval( $string );
+		$result         = '';
+		$string_explode = explode( ' ', $string );
+		foreach ( $string_explode as $i => $word ) {
+			if($max_count !== 0){
+				if($i < $max_count){
+					$result .= $word[0];
+				}
+			}else{
+				$result .= $word[0];
+			}
+		}
+
+		return $result;
 	}
 
 }

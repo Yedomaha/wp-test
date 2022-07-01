@@ -54,7 +54,7 @@ function custom_post_type()
             'label' => 'Types',
             'singular_label' => 'Type',
             'show_in_rest' => true,
-            'rewrite' => array('slug' => 'course', 'with_front' => false)
+            'rewrite' => array('slug' => 'type', 'with_front' => false)
         )
     );
     register_taxonomy_for_object_type('course_type', 'courses');
@@ -64,7 +64,7 @@ function custom_post_type()
 			'label' => 'Campuses',
 			'singular_label' => 'Campus',
 			'show_in_rest' => true,
-			'rewrite' => array('slug' => 'course', 'with_front' => false)
+			'rewrite' => array('slug' => 'campus', 'with_front' => false)
 		)
 	);
 	register_taxonomy_for_object_type('course_campus', 'courses');
