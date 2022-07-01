@@ -15,7 +15,7 @@ Template for develop Wordpress theme with ACF Pro plugins.
 *   js (es6)
 *   gulp 4
 *   webpack
-*   npm v16+
+*   npm v14+
 *   PHP 7
 
 ## Commands.
@@ -38,21 +38,3 @@ Template for develop Wordpress theme with ACF Pro plugins.
     - components
     - inline-svg
     - loop
-        
-### Plugins installed: 
-
-- Admin Menu Editor
-- Advanced Custom Fields PRO
-- Category Order and Taxonomy Terms Order
-- Contact Form 7
-- Contact Form CFDB7
-- Custom Post Type UI
-- Disable Blogging
-- Duplicator Pro
-- Flexible Content Preview for Advanced Custom Fields
-- Post Types Order
-- Query Monitor
-- WP Extended Search
-- WP Rocket
-- Yoast Duplicate Post
-- Yoast SEO
